@@ -1,0 +1,41 @@
+extends:
+  - airbnb
+  - plugin:flowtype/recommended
+plugins:
+  - react
+  - flowtype
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+rules:
+  semi:
+    - error
+    - never
+  quote-props:
+    - error
+    - as-needed
+    - unnecessary: false
+  no-console: off
+  no-continue: off
+  no-use-before-define: off
+  no-duplicate-imports: off
+  no-plusplus: off
+  no-param-reassign:
+    - error
+    - props: false
+  import/prefer-default-export: off
+  no-underscore-dangle: off
+  indent:
+    - error
+    - 2
+    - SwitchCase: 0
+  react/jsx-filename-extension: off
+  react/jsx-no-bind: off
+  react/forbid-prop-types: off
+  react/prefer-stateless-function: off
+  react/sort-comp: off
+  object-curly-spacing:
+    - error
+    - never
+  consistent-return: off
+  import/no-extraneous-dependencies: off
