@@ -1,22 +1,56 @@
 {
-	"name": "NewCalendarPicker",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
+  "name": "react-native-calendarium",
+  "version": "0.0.1",
+  "main": "./CalendarPicker/CalendarPicker.js",
+  "scripts": {
+    "test": "eslint src && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evindor/Calendarium"
+  },
+  "bugs": {
+    "url": "https://github.com/evindor/Calendarium/issues"
+  },
+  "homepage": "https://github.com/evindor/Calendarium",
+  "license": "MIT",
+  "keywords": [
+    "ios",
+    "react-native",
+    "react",
+    "react-component",
+    "calendar",
+    "range",
+    "picker",
+    "date",
+    "day"
+  ],
+  "author": "Arseny Zarechnev <me@evindor.com> (twitter.com/evindor)",
+  "contributors": [
+    "stephy <alves@stephanimoroni.com>",
+    "Rogério Pereira Araújo <rogerio.araujo@gmail.com>"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "flow-bin": "0.36.0",
+    "jest": "18.1.0",
 		"react": "~15.4.0-rc.4",
-		"react-native": "0.40.0"
-	},
-	"devDependencies": {
-		"babel-jest": "18.0.0",
-		"babel-preset-react-native": "1.9.1",
-		"jest": "18.1.0",
-		"react-test-renderer": "~15.4.0-rc.4"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+		"react-native": "0.41.0",
+    "react-test-renderer": "~15.4.0-rc.4"
+  },
+  "jest": {
+    "preset": "react-native",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "examples"
+    ]
+  }
 }
