@@ -7,8 +7,9 @@
  * Licensed under the terms of the MIT license. See LICENSE file in the project root for terms.
  */
 
-type StyleMap = {[k: string]: Object}
-export function makeStyles(scaler: number) {
+import type {Styles} from 'react-native'
+
+export function makeStyles(scaler: number): Styles {
   return {
     calendar: {
       height: 320 * scaler,
