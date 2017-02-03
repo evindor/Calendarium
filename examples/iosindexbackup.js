@@ -1,6 +1,6 @@
 // @flow
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
@@ -14,9 +14,9 @@ import CalendarPicker from 'react-native-calendarium'
 export default class NewCalendarPicker extends Component {
   state = {
     date: new Date(),
-    start_date: new Date(),
-    rangeSelection: true,
-    end_date: null
+      start_date: new Date(),
+      rangeSelection: true,
+      end_date: null
   }
 
   onDateChange = (date: Date) => {

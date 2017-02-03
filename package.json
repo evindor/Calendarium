@@ -1,8 +1,14 @@
 {
   "name": "react-native-calendarium",
   "version": "0.0.1",
-  "main": "./CalendarPicker/CalendarPicker.js",
+  "main": "dist.js",
+  "files": [
+    "src",
+    "index.js"
+  ],
   "scripts": {
+    "start": "./node_modules/react-native/packager/packager.sh start --projectRoots `pwd`,`pwd`/examples/HelloCalendarium",
+    "lint": "eslint src",
     "test": "eslint src && jest"
   },
   "repository": {
@@ -30,6 +36,10 @@
     "stephy <alves@stephanimoroni.com>",
     "Rogério Pereira Araújo <rogerio.araujo@gmail.com>"
   ],
+  "dependencies": {
+    "react": ">=15.0.0",
+    "react-native": ">=0.40.0"
+  },
   "devDependencies": {
     "babel-eslint": "^7.1.0",
     "babel-jest": "18.0.0",
@@ -42,8 +52,8 @@
     "eslint-plugin-react": "^6.6.0",
     "flow-bin": "0.36.0",
     "jest": "18.1.0",
-		"react": "~15.4.0-rc.4",
-		"react-native": "0.41.0",
+    "react": "^15.4.2",
+    "react-native": "^0.41.0",
     "react-test-renderer": "~15.4.0-rc.4"
   },
   "jest": {
@@ -52,5 +62,9 @@
       "/node_modules/",
       "examples"
     ]
+  },
+  "peerDependencies": {
+    "react": ">=15.0.0",
+    "react-native": ">=0.40.0"
   }
 }

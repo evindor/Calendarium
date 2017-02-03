@@ -9,7 +9,7 @@
 
 import type {Styles} from 'react-native'
 
-export function makeStyles(scaler: number): Styles {
+export default function makeStyles(scaler: number): Styles {
   return {
     calendar: {
       height: 320 * scaler,

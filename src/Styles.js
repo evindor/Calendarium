@@ -6,7 +6,9 @@
  */
 
 
-const StyleSheet = require('react-native').StyleSheet
+import {
+  StyleSheet,
+} from 'react-native'
 
 const styles = StyleSheet.create({
   calendar: {
@@ -82,4 +84,4 @@ const styles = StyleSheet.create({
   },
 })
 
-module.exports = styles
+export default styles
